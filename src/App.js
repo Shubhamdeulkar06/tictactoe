@@ -66,6 +66,18 @@ const App = () => {
       itemArray[4] === itemArray[6]
     ) {
       setWinMessage(`${itemArray[2]} won`);
+    } else if (
+      itemArray[0] !== "empty" &&
+      itemArray[1] !== "empty" &&
+      itemArray[2] !== "empty" &&
+      itemArray[3] !== "empty" &&
+      itemArray[4] !== "empty" &&
+      itemArray[5] !== "empty" &&
+      itemArray[6] !== "empty" &&
+      itemArray[7] !== "empty" &&
+      itemArray[8] !== "empty"
+    ) {
+      setWinMessage("It's a draw! Please reload the game");
     }
   };
   const changeItem = (itemNumber) => {
@@ -83,7 +95,7 @@ const App = () => {
   return (
     <Container className="p-5">
       <h1 className="p-3 text-center heading">Ready for a Tic Tac Toe?</h1>
-      <ToastContainer position="bottom-center " />
+      <ToastContainer position="bottom-center" />
       <Row>
         <Col md={6} className="offset-md-3">
           {winMessage ? (
