@@ -97,7 +97,7 @@ const App = () => {
             </div>
           ) : (
             <h1 className=" text-warning text-uppercase text-center">
-              {isCross ? "Cross" : "Circle"} turns
+              {isCross ? "Player 2's" : "Player 1's"} turn
             </h1>
           )}
           <div className="grid">
