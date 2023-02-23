@@ -82,7 +82,8 @@ const App = () => {
   };
   return (
     <Container className="p-5">
-      <ToastContainer position="bottom-center" />
+      <h1 className="p-3 text-center heading">Ready for a Tic Tac Toe?</h1>
+      <ToastContainer position="bottom-center " />
       <Row>
         <Col md={6} className="offset-md-3">
           {winMessage ? (
